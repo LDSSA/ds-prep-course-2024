@@ -1,4 +1,4 @@
-# Data Science Prep Course 2023
+# Data Science Prep Course 2024 documentation is currently being updated, so stay tuned!
 Welcome to the Data Science Prep Course repository! 🧑‍💻
 
 Your first step in this journey is to **carefully read** the steps in this tutorial. ⚠️ **Important**: Make sure to complete all the steps during the setup week, **27.3 - 2.4. 2023**. If you are struggling with any of the steps, tell us in the #setup channel on Slack! In this tutorial, you'll learn:
