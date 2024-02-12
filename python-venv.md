@@ -9,13 +9,13 @@ We will use the `venv` software package to create the virtual environment. The v
 **Step 1:** Start by ensuring that the Python packages `pip`, `setuptools`, and `wheel` are up to date:
 
 ```bash
-python3.8 -m pip install --user --upgrade pip setuptools wheel
+python3.11 -m pip install --user --upgrade pip setuptools wheel
 ```
 
 **Step 2:** Create a virtual environment with the name `prep-venv` in the `.virtualenvs` folder:
 
 ```bash
-python3.8 -m venv ~/.virtualenvs/prep-venv
+python3.11 -m venv ~/.virtualenvs/prep-venv
 ```
 
 **Step 3:** Activate the environment:
@@ -42,4 +42,5 @@ pip install -U pip
 cd ~/projects/ds-prep-workspace
 pip install -r requirements.txt
 ```
+
 Congratulations! You are now all set up and you can continue to the last step in the main menu - step 6, testing the weekly workflow with `SLU00 - Jupyter Notebook` from `Week 00`.

@@ -1,8 +1,8 @@
 # 2. Setup _Git_ and _GitHub_
 
-`Git` is a distributed version-control system for tracking changes in source code. A `repository` is where code lives, and the code from the prep course will live at [`ds-prep-course-2023`](https://github.com/LDSSA/ds-prep-course-2023) repository (basically where you are right now, reading this). All the learning materials and exercises will be released (made available) on this repository. You will learn more about `git` in the learning units 3 and 6.
+`Git` is a distributed version-control system for tracking changes in source code. A `repository` is where code lives, and the code from the prep course will live at [`ds-prep-course-2024`](https://github.com/LDSSA/ds-prep-course-2024) repository (basically where you are right now, reading this). All the learning materials and exercises will be released (made available) on this repository. You will learn more about `git` in the learning units 3 and 6.
 
-### 2.1 Sign up for GitHub 
+### 2.1 Sign up for GitHub
 
 **Step 1:** [Sign up](https://github.com/join) for a `GitHub` account and follow the instructions.
 
@@ -61,15 +61,15 @@ Replace `<username>` below with your `GitHub` username, removing the brackets `<
 git clone https://github.com/<username>/ds-prep-workspace.git
 ```
 
-   **Note**: if you have had a `GitHub` account since before this course and you are using `ssh keys` instead of `tokens`, first make sure that you have completed the steps starting [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys), then clone your repository like this. You can skip step 5 and continue with section 2.4.
+**Note**: if you have had a `GitHub` account since before this course and you are using `ssh keys` instead of `tokens`, first make sure that you have completed the steps starting [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys), then clone your repository like this. You can skip step 5 and continue with section 2.4.
 
-   ```bash
-   git clone git@github.com:<username>/ds-prep-workspace.git
-   ```
+```bash
+git clone git@github.com:<username>/ds-prep-workspace.git
+```
 
 **Step 5:** You'll be asked for your `GitHub` username. Type it and press <kbd>enter</kbd>. Then you'll be asked for your git password. Passwords no longer work for `GitHub`, you will need to use `tokens`.
 
-Go to <https://github.com/settings/tokens> and click on `Generate new token`. You can give it a name in the note field, such as `ldsa-token`. Then select `repo` in the scopes and click on `Generate token`. You will be shown a `token` you should save - **you will not be able to see it again after leaving that window**. 
+Go to <https://github.com/settings/tokens> and click on `Generate new token`. You can give it a name in the note field, such as `ldsa-token`. Then select `repo` in the scopes and click on `Generate token`. You will be shown a `token` you should save - **you will not be able to see it again after leaving that window**.
 
 Now use the `token` instead of your password and press <kbd>enter</kbd>
 
@@ -77,9 +77,9 @@ You should now have a local copy of your `ds-prep-workspace` in your `~/projects
 
 <img src='media/personal_access_token.PNG' width="75%" />
 
-### 2.4 Clone the `ds-prep-course-2023` repository
+### 2.4 Clone the `ds-prep-course-2024` repository
 
-Let's clone the [`ds-prep-course-2023`](https://github.com/LDSSA/ds-prep-course-2023) repository. This is where all of the learning materials will be made available as the prep course progresses. You will be getting them (pulling) from there.
+Let's clone the [`ds-prep-course-2024`](https://github.com/LDSSA/ds-prep-course-2024) repository. This is where all of the learning materials will be made available as the prep course progresses. You will be getting them (pulling) from there.
 
 **Step 1:** Open a terminal (or use one you've already opened) and enter the `projects` folder:
 
@@ -90,19 +90,19 @@ cd ~/projects
 **Step 2:** Clone the Prep Course repository (it's the same that contains the README you're reading right now!):
 
 ```bash
-git clone https://github.com/LDSSA/ds-prep-course-2023.git
+git clone https://github.com/LDSSA/ds-prep-course-2024.git
 ```
 
 If you are using `ssh keys` for `GitHub`, use this command:
 
 ```bash
-git clone git@github.com:LDSSA/ds-prep-course-2023.git
+git clone git@github.com:LDSSA/ds-prep-course-2024.git
 ```
 
-**Step 3:** Copy the `requirements.txt` file from the prep course repository to your local workspace repository. The `cp` bash command means **c**o**p**y.  Then you have the address of the file that is being copied and to where it is copied.
+**Step 3:** Copy the `requirements.txt` file from the prep course repository to your local workspace repository. The `cp` bash command means **c**o**p**y. Then you have the address of the file that is being copied and to where it is copied.
 
 ```bash
-cp ~/projects/ds-prep-course-2023/requirements.txt ~/projects/ds-prep-workspace
+cp ~/projects/ds-prep-course-2024/requirements.txt ~/projects/ds-prep-workspace
 ```
 
 And you're done with setting `Git` and `GitHub`! Go back to the main menu and continue with step 4, setting up the virtual environment.

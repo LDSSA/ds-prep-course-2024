@@ -1,7 +1,8 @@
 # Data Science Prep Course 2024 documentation is currently being updated, so stay tuned!
+
 Welcome to the Data Science Prep Course repository! 🧑‍💻
 
-Your first step in this journey is to **carefully read** the steps in this tutorial. ⚠️ **Important**: Make sure to complete all the steps during the setup week, **27.3 - 2.4. 2023**. If you are struggling with any of the steps, tell us in the #setup channel on Slack! In this tutorial, you'll learn:
+Your first step in this journey is to **carefully read** the steps in this tutorial. ⚠️ **Important**: Make sure to complete all the steps during the setup week, **18.3 - 24.3. 2024**. If you are struggling with any of the steps, tell us in the [#set-up](https://ldsaprepcourse2024.slack.com/archives/C06GMB5BHU7) channel on Slack! In this tutorial, you'll learn:
 
 - Slack usage and etiquette;
 - How to setup your software environment;
@@ -22,7 +23,6 @@ First and foremost, we'll talk about how to use our communication tool, Slack. Y
     </td>
   </tr>
 </table>
-
 
 ## 2. Initial Setup
 
@@ -48,7 +48,6 @@ Please choose your operating system:
   </tr>
 </table>
 
-
 ## 3. Setup _Git_ and _GitHub_
 
 Click on the image to follow the link.
@@ -62,7 +61,6 @@ Click on the image to follow the link.
     </td>
   </tr>
 </table>
-
 
 ## 4. Setup for all operating systems - Python virtual environment
 
@@ -78,7 +76,6 @@ Click on the image to follow the link.
   </tr>
 </table>
 
-
 ## 5. Weekly workflow
 
 The workflow that you will follow every week with every new learning unit. Test it on `SLU00 - Jupyter Notebook` from `Week 00`. Click on the image to follow the link.
@@ -93,8 +90,7 @@ The workflow that you will follow every week with every new learning unit. Test 
   </tr>
 </table>
 
-
-## 6. Troubleshooting 
+## 6. Troubleshooting
 
 A few common problems and solutions. If you don't find what you're looking for, check out the #setup channel on Slack. Click on the image to follow the link.
 
@@ -107,4 +103,3 @@ A few common problems and solutions. If you don't find what you're looking for, 
     </td>
   </tr>
 </table>
-

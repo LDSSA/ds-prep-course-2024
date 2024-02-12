@@ -12,10 +12,11 @@ Your first step in this journey is to **carefully read** the steps in this tutor
 Some of the steps in the following sections will require `Homebrew` for MacOS. `Homebrew` is a package manager - it helps you installing software. Installing `Homebrew` will make it easier to install software that we will use later on.
 
 **Step 1:** Open a terminal in one of the following ways:
-* In Finder <img src='media/finder.png' alt='Finder' width="4%" />, open the `/Applications/Utilities` folder, then double-click `Terminal`.
-* Press <kbd>cmd</kbd> + <kbd>space</kbd> then type `terminal` and press <kbd>enter</kbd>.
 
-    The terminal should now be open:
+- In Finder <img src='media/finder.png' alt='Finder' width="4%" />, open the `/Applications/Utilities` folder, then double-click `Terminal`.
+- Press <kbd>cmd</kbd> + <kbd>space</kbd> then type `terminal` and press <kbd>enter</kbd>.
+
+  The terminal should now be open:
 
     <img src='media/mac_terminal.png' width="50%" />
 
@@ -45,16 +46,16 @@ brew update --verbose
 brew install git
 ```
 
-**Step 5:** Now run the following command to install `Python 3.8`:
+**Step 5:** Now run the following command to install `Python 3.11`:
 
 ```bash
-brew install python@3.8
+brew install python@3.11
 ```
 
-**Step 6:** then run the following command to set the default `python3` version to 3.8:
+**Step 6:** then run the following command to set the default `python3` version to 3.11:
 
 ```bash
-brew link python@3.8
+brew link python@3.11
 ```
 
 And you're done! Go back to the main menu and continue with setting up Git and GitHub in step 3.
@@ -64,10 +65,11 @@ And you're done! Go back to the main menu and continue with setting up Git and G
 So you've got the new M1 and you're super happy with how fast it is. Unfortunately dealing with Apple silicon requires a little detour. But don't worry, we'll be able to get there in the end.
 
 **Step 1:** Open a terminal in one of the following ways:
-* In Finder <img src='media/finder.png' alt='Finder' width="4%" />, open the `/Applications/Utilities` folder, then double-click `Terminal`.
-* Press <kbd>cmd</kbd> + <kbd>space</kbd> then type `terminal` and press <kbd>enter</kbd>.
 
-    The terminal should now be open:
+- In Finder <img src='media/finder.png' alt='Finder' width="4%" />, open the `/Applications/Utilities` folder, then double-click `Terminal`.
+- Press <kbd>cmd</kbd> + <kbd>space</kbd> then type `terminal` and press <kbd>enter</kbd>.
+
+  The terminal should now be open:
 
     <img src='media/mac_terminal.png' width="50%" />
 
@@ -98,23 +100,25 @@ echo 'alias ibrew="arch -x86_64 /usr/local/bin/brew"' >> ~/.zshrc
 ```
 
 **Step 4:** Activate the alterations done to the `.zshrc` file:
+
 ```bash
 source ~/.zshrc
 ```
 
-**Step 5:** Install `Python 3.8` with `ibrew`:
+**Step 5:** Install `Python 3.11` with `ibrew`:
 
 ```bash
-ibrew install python@3.8
+ibrew install python@3.11
 ```
 
-**Step 6:** Add `Python 3.8` to `$PATH`:
+**Step 6:** Add `Python 3.11` to `$PATH`:
 
 ```bash
-export PATH="/usr/local/opt/python@3.8/bin:$PATH" >> ~/.zshrc
+export PATH="/usr/local/opt/python@3.11/bin:$PATH" >> ~/.zshrc
 ```
 
 **Step 7** Re-activate the alterations done to the `.zshrc` file:
+
 ```bash
 source ~/.zshrc
 ```

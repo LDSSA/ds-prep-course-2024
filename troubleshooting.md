@@ -1,13 +1,13 @@
 # Troubleshooting
 
-[1. When I open Windows Explorer through Ubuntu, it goes to a different folder than in the guide](#1-when-i-open-windows-explorer-through-ubuntu-it-goes-to-a-different-folder-than-in-the-guide)   
-[2. Ubuntu on Windows 10 high CPU usage, crashes](#2-ubuntu-on-windows-10-high-cpu-usage-crashes)   
-[3. When I pull from the `ds prep course-2023` repository, I get an error](#3-when-i-pull-from-the-ds-prep-course-2023-repository-i-get-an-error)   
-[4. When I try to open `jupyter notebook`, I get an error](#4-when-i-try-to-open-the-jupyter-notebook-i-get-an-error)   
-[5. When I use the `cp` command the `>` sign appears and the command does not execute](#5-when-i-use-the-cp-command-the--sign-appears-and-the-command-does-not-execute)   
-[6. When setting up python 3.8 I get an error](#6-when-setting-up-python-38-i-get-an-error)   
-[7. Nothing happens when I type my password](#7-nothing-happens-when-i-type-my-password)   
-[8. I still have a NotImplemented error](#8-i-still-have-a-notimplemented-error)   
+[1. When I open Windows Explorer through Ubuntu, it goes to a different folder than in the guide](#1-when-i-open-windows-explorer-through-ubuntu-it-goes-to-a-different-folder-than-in-the-guide)  
+[2. Ubuntu on Windows 10 high CPU usage, crashes](#2-ubuntu-on-windows-10-high-cpu-usage-crashes)  
+[3. When I pull from the `ds prep course-2024` repository, I get an error](#3-when-i-pull-from-the-ds-prep-course-2024-repository-i-get-an-error)  
+[4. When I try to open `jupyter notebook`, I get an error](#4-when-i-try-to-open-the-jupyter-notebook-i-get-an-error)  
+[5. When I use the `cp` command the `>` sign appears and the command does not execute](#5-when-i-use-the-cp-command-the--sign-appears-and-the-command-does-not-execute)  
+[6. When setting up python 3.8 I get an error](#6-when-setting-up-python-38-i-get-an-error)  
+[7. Nothing happens when I type my password](#7-nothing-happens-when-i-type-my-password)  
+[8. I still have a NotImplemented error](#8-i-still-have-a-notimplemented-error)  
 [9. Tutorial videos from Prep Course 2020](#9-tutorial-videos-from-prep-course-2020)
 
 ### 1. When I open Windows Explorer through Ubuntu, it goes to a different folder than in the guide
@@ -22,7 +22,7 @@ Please make sure:
 - Make sure you are running Windows 10 version `1909` or newer.
 - Then, try following [these steps](https://teckangaroo.com/enable-windows-10-virtual-machine-platform/)
 
-### 3. When I pull from the `ds-prep-course-2023` repository, I get an error
+### 3. When I pull from the `ds-prep-course-2024` repository, I get an error
 
 If you get an error like the following when pulling:
 
@@ -33,23 +33,23 @@ Please commit your changes or stash them before you merge.
 Aborting
 ```
 
-what `git` is telling you is that changes were made by you to the files in the `~/projects/ds-prep-course-2023` folder, and therefore it is not pulling the changes made by the instructors because they would overwrite the changes made by you.
+what `git` is telling you is that changes were made by you to the files in the `~/projects/ds-prep-course-2024` folder, and therefore it is not pulling the changes made by the instructors because they would overwrite the changes made by you.
 
 To fix this do the following:
 
-1. Make sure that any changes you made to the files in `~/projects/ds-prep-course-2023`  (that you don't want to lose) are saved in your `~/projects/ds-prep-workspace` repository (refer to [Updates of the learning units](weekly-workflow.md#14-updates-of-the-learning-units) on how to do this). If you don't want to keep the changes you made to these files, just continue on to the next step.
-2. Go to the `~/projects/ds-prep-course-2023` folder and run:
+1. Make sure that any changes you made to the files in `~/projects/ds-prep-course-2024` (that you don't want to lose) are saved in your `~/projects/ds-prep-workspace` repository (refer to [Updates of the learning units](weekly-workflow.md#14-updates-of-the-learning-units) on how to do this). If you don't want to keep the changes you made to these files, just continue on to the next step.
+2. Go to the `~/projects/ds-prep-course-2024` folder and run:
 
-    ```bash
-    cd ~/projects/ds-prep-course-2023
-    git stash
-    ```
+   ```bash
+   cd ~/projects/ds-prep-course-2024
+   git stash
+   ```
 
-3. Now you can pull from the `ds-prep-course-2023` repository:
+3. Now you can pull from the `ds-prep-course-2024` repository:
 
-    ```bash
-    git pull
-    ```
+   ```bash
+   git pull
+   ```
 
 ### 4. When I try to open the jupyter notebook, I get an error
 
@@ -62,7 +62,7 @@ source ~/.virtualenvs/prep-venv/bin/activate
 ### 5. When I use the `cp` command the `>` sign appears and the command does not execute
 
 ```bash
-cp -r ~/projects/ds-prep-course-2023/“Week 00" ds-prep-workspace
+cp -r ~/projects/ds-prep-course-2024/“Week 00" ds-prep-workspace
 >
 ```
 

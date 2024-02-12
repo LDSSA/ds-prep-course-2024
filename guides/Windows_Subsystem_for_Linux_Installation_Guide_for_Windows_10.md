@@ -33,7 +33,7 @@ and then clicking `Run as Administrator`:
 2. Then paste the following command in `PowerShell`:
 
 ```powershell
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux,VirtualMachinePlatform
 ```
 
 ![start](assets/paste_powershell.png)
@@ -44,9 +44,10 @@ and run it by pressing <kbd>enter</kbd>:
 
 ## Install Ubuntu
 
-1. Open this link to the [Microsoft Store](https://www.microsoft.com/store/apps/9N9TNGVNDL3Q) and select `Get` to install `Ubuntu`.
+1. Open this link to the [Microsoft Store](https://apps.microsoft.com/detail/9PN20MSR04DW?hl=en-gb&gl=GB) and select `Download` to install `Ubuntu`.
 
 ## Launch Ubuntu
+
 To complete the initialization of your newly installed `Ubuntu`, launch a new instance. You can do this by typing `ubuntu` in your Windows search bar:
 
 ![start](assets/start.png)
@@ -67,11 +68,13 @@ This user account is for the normal non-admin user that you'll be logged-in by d
 
 > You can choose any username and password you wish - they have no bearing on your Windows username. Beware that when you type passwords in the terminal, you will not see what you are typing. This is a normal behaviour in Linux. Just type the password and hit <kbd>Enter</kbd>.
 
-When you open a new `Ubuntu` instance, you won't be prompted for your password, but **if you elevate a process using `sudo`, you will need to enter your password**, so make sure you choose a password you can easily remember! On `Ubuntu`, every user can do admin tasks such as installing software, but they have to use the magic `sudo` word and input the password. This tells `Ubuntu` that you will be acting as admin in the next moments. 
+When you open a new `Ubuntu` instance, you won't be prompted for your password, but **if you elevate a process using `sudo`, you will need to enter your password**, so make sure you choose a password you can easily remember! On `Ubuntu`, every user can do admin tasks such as installing software, but they have to use the magic `sudo` word and input the password. This tells `Ubuntu` that you will be acting as admin in the next moments.
+
+> ⚠️ **Important: Do not forget this password (along with the associated username)**, as you'll not be able to see it again. It is your access card to perform operating system actions that require administrator privileges such as installation of some necessary features to work through the course.
 
 ## Opening the WSL terminal
 
->⚠️ **Important**: From now on, every time we ask you to open a terminal, this is what you need to do. We'll refer to it just as `terminal` instead of `WSL terminal` or `Ubuntu terminal`.
+> ⚠️ **Important**: From now on, every time we ask you to open a terminal, this is what you need to do. We'll refer to it just as `terminal` instead of `WSL terminal` or `Ubuntu terminal`.
 
 Whenever you want to use WSL, just type `ubuntu` in your Windows search bar.
 
@@ -87,7 +90,7 @@ Then a `terminal` window will open that allows you to interact with `Ubuntu`.
 
 ## Enable copy and paste keyboard shortcuts
 
-By default, the terminal does not allow the usual shortcuts for copying and pasting - you have to enable them first. In the upper left corner of the WSL terminal, click the orange circle:
+By default, the terminal does not allow the usual shortcuts for copying and pasting - you have to enable them first. In the upper left corner of the WSL terminal, click the orange square:
 
 ![Ubuntu unpacking in the Windows console](assets/orange_circle.png)
 
@@ -121,6 +124,8 @@ The `Windows Explorer` should pop up:
 
 ![start](assets/windows_explorer.png)
 
-Keep in mind that you should manipulate files and create directories inside your `Ubuntu-18.04/home/<your name>` folder.
+If you wish, you can also access your user folder directly from the Windows Explorer address bar usign this path: `\\wsl.localhost\Ubuntu-22.04\home\<YOUR USERNAME>`. This is exactly the same as calling the Windows Explorer from within your Ubuntu user folder with the `.` option.
+
+Keep in mind that you should manipulate files and create directories inside your `Ubuntu-22.04/home/<your name>` folder.
 
 You're all set with WSL! Now go back to the initial setup for Windows and continue with step 2.
