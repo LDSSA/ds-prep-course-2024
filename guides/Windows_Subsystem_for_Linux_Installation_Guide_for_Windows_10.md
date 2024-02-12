@@ -128,4 +128,4 @@ If you wish, you can also access your user folder directly from the Windows Expl
 
 Keep in mind that you should manipulate files and create directories inside your `Ubuntu-22.04/home/<your name>` folder.
 
-You're all set with WSL! Now go back to the initial setup for Windows and continue with step 2.
+You're all set with WSL! Now go back to the initial setup for Windows and continue with [step 3](https://github.com/LDSSA/ds-prep-course-2024/tree/readme-update-cmm79#3-setup-git-and-github).
