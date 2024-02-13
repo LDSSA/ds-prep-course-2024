@@ -3,7 +3,7 @@
 ### New to Slack?
 
 Slack is a messaging app for team communication. If you are new to Slack, check out this short [intro](https://slack.com/help/articles/360059928654-How-to-use-Slack--your-quick-start-guide). You can find more tutorials [here](https://slack.com/help/categories/360000049063).  
-You can download the Slack app on the [Slack web page](https://slack.com/downloads/windows) or through [Microsoft Store](ms-windows-store://pdp/?ProductId=9WZDNCRDK3WP&mode=mini).  
+You can download the Slack app in the [Slack web page](https://slack.com/downloads/windows) or through [Microsoft Store](https://apps.microsoft.com/detail/9WZDNCRDK3WP?hl=en-gb&gl=GB).  
 Although the app installation is recommended, if you don't wish to install Slack on your computer you can just use [Slack in the browser](https://app.slack.com/).
 
 ### How to use Slack nicely and effectively
