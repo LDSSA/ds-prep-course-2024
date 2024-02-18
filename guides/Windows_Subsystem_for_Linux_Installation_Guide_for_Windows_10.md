@@ -1,221 +1,238 @@
 # Windows Subsystem for Linux Installation Guide for Windows 10
 
-## Disclaimer
+## 1. Make sure that Windows is up to date
 
-When we refer the "Linux operating system", we really mean the "GNU/Linux operating system" because GNU is actually the original part of the software. Linux is the kernel, i.e. "the program in the system that allocates the machine's resources to the other programs that you run", or simply the software that establishes the communication between the remaining parts of the system's software and the computer's hardware components.
-For historical and eventually marketing reasons, the "GNU" designation has been neglecenciated by the industry that adopted the "Linux" designation for the entire system, which is obviously not accurate since the kernel doesn't run on it's own, but even if it could, it would be just useless.
+<a id="step-1_1" style="color: black;">&nbsp; 1.</a> Type `updates` in your **'Windows search bar'** to open the **'Windows search filter'**:
 
-For additional information about this subject:
+![alt text](assets/windows_search_bar.png)
 
-- [What's in a name?](https://www.gnu.org/gnu/why-gnu-linux.html)
-- [Linux and the GNU System](https://www.gnu.org/gnu/linux-and-gnu.html)
-- [GNU Users Who Have Never Heard of GNU](https://www.gnu.org/gnu/gnu-users-never-heard-of-gnu.html)
-- [GNU/Linux FAQ](https://www.gnu.org/gnu/gnu-linux-faq.html)
+2. Click **'Check for Updates'** in the **'Windows search filter'**:
 
-## Make sure that Windows is up to date
+![alt text](assets/windows_check_for_updates.png)
 
-1. Type `update` in your Windows search bar:
+3. Download and install any updates that appear in the **'Windows Update'** menu (shown below):
 
-![start](assets/start.png)
+<img src="assets/windows_update.png" alt="alt text" width="782" height="auto" />
 
-then click `Check for Updates`:
+After you're done installing those updates, please check which **'OS build'** of Windows 10 you are running using the following steps:
 
-![start](assets/open_update.png)
+4. Type `about` in your **'Windows search bar'** to open the **'Windows search filter'**.
 
-then download and install any updates that appear in the Windows Update menu (shown below):
+1. Click **'About your PC (System settings)'**:
 
-![start](assets/windows_update.png)
+![alt text](assets/windows_about_your_pc.png)
 
-After you're done installing those updates, please [check which OS build of Windows 10 you are running](https://support.microsoft.com/en-us/help/13443/windows-which-version-am-i-running), and if your OS build number is smaller that `19041.XXX`, then please keep coming back to Windows Update and installing updates until you have at least OS build `19041.XXX`. Then you may proceed with this guide.
+6. Check **'OS build'** under **'Windows specifications'**:
 
-![start](assets/os_build.png)
+![alt text](assets/windows_specifications.png)
 
-## Install the Windows Subsystem for Linux
+7. If your **'OS build'** number is at least `19041.x` proceed to [step 2. Install the Windows Subsystem for Linux](#2-install-the-windows-subsystem-for-linux).
+    > The 'x' means any number
 
-Before installing any Linux distributions for WSL, you must ensure that the `Windows Subsystem for Linux` optional feature is enabled.  
-Following, you have two possible ways of doing this (approaches 1 and 2). You may use the one you find more convenient.
+8. If your **'OS build'** number is smaller than `19041.x`, then please keep coming back to **'Windows Update'** (previous **[step 1.](#step-1_1)**) and installing updates until you have at least **'OS build'** `19041.x`. Then you may proceed with this guide.
 
-### Approach 1:
+> 📝 **Note:** If you have problems checking your system's **'OS build'**, see [Which version of Windows operating system am I running?](https://support.microsoft.com/en-us/windows/which-version-of-windows-operating-system-am-i-running-628bec99-476a-2c13-5296-9dd081cdd808) for more information.
 
-1. Open `PowerShell` as Administrator by typing `PowerShell` in your Windows search bar:
+## 2. Install the Windows Subsystem for Linux
 
-![start](assets/start.png)
+Before installing any **'GNU/Linux'** or simply **'Linux'** distribution ([as you wish](https://en.wikipedia.org/wiki/GNU/Linux_naming_controversy) [^1]) using **'WSL'**, you must ensure that both **'Windows Subsystem for Linux'** and **'Virtual Machine Platform'** optional features are enabled.  
+Following, you have two possible ways of doing this (approaches 1 and 2). Use the one you find more convenient.
 
-and then clicking `Run as Administrator`:
+> For additional information about **'WSL'** check [learn.microsoft.com](https://learn.microsoft.com/en-us/windows/wsl/about) 
 
-![start](assets/open_powershell.png)
+### Approach 1: Using the Windows interface
 
-2. Then paste the following command in `PowerShell`:
+1. Type `turn` in your **'Windows search bar'** to open the **'Windows search filter'**.
+
+2. Click **'Turn Windows features on or off'** in the **'Windows search filter'**:
+
+![alt text](assets/windows_turn_windows_features_on_or_off.png)
+
+3. In the **'Windows Features'** menu, activate the required checkboxes, indicated below:
+
+![alt text](assets/windows_features.png)
+
+4. Click <kbd>OK</kbd> to finish.
+
+5. Restart your computer if asked to.
+
+### Approach 2: Using the Windows PowerShell
+
+<a id="step-2_2_1" style="color: black;">&nbsp; 1.</a> Open **'PowerShell'** as Administrator by typing `powershell` in your **'Windows search bar'**, and then clicking **'Run as Administrator'** in the **'Windows Search filter'** under **'Windows PowerShell (App)'**
+
+![alt text](assets/windows_powershell.png)
+
+2. Paste the following command in **'PowerShell'**:
 
 ```powershell
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux,VirtualMachinePlatform
 ```
 
-![start](assets/paste_powershell.png)
+![alt text](assets/powershell_turn_on_wsl_and_virtualization.png)
 
-and run it by pressing <kbd>enter</kbd>.
+3. Run it by pressing <kbd>enter</kbd>.
 
-3. Restart your computer if asked to.
+4. Restart your computer if asked to.
 
-### Approach 2:
+## 3. Install Ubuntu
 
-1. Enable Windows Subsystem for Linux and Virtual Machine Platform using the Windows interface from _Turn Windows features on or off_:
+Open this link to the [Microsoft Store](https://apps.microsoft.com/detail/9PN20MSR04DW?hl=en-gb&gl=GB) and click **'Download'** to install **'Ubuntu 22.04.x'**.
 
-![turn windows features on or off](assets/turn_windows_features_on_or_off.png)
+## 4. Launch Ubuntu
 
-2. In the menu, activate the required checkboxes:
+1. Complete the initialization of your newly installed **'Ubuntu'**, launch a new instance. You can either do this by:
 
-![windows features](assets/windows_features.png)
+- clicking the **'Open'** or **'Launch'** button in the **'Microsoft Store'** page after the download is finished:
 
-and click `OK` to finish.
+  <img src="assets/ubuntu_open_microsoft_store.png" alt="alt text" width="300" height="auto" />
 
-3. Restart your computer if asked to.
+- or typing `ubuntu` in the **'Windows search bar'** and clicking **'Ubuntu 22.04.X LTS'** in the **'Windows search filter'**:
 
-## Install Ubuntu
+![!\[alt text\](assets/open_ubuntu.png)](assets/windows_search_bar_ubuntu.png)
 
-1. Open this link to the [Microsoft Store](https://apps.microsoft.com/detail/9PN20MSR04DW?hl=en-gb&gl=GB) and select `Download` to install `Ubuntu`.
+2. The first time the newly installed **'Ubuntu'** runs, a **'console'** window will open.
 
-## Launch Ubuntu
+      - If you get this error:
 
-To complete the initialization of your newly installed `Ubuntu`, launch a new instance. You can either do this:
+        ![alt text](assets/ubuntu_instalation_error.png)
 
-- by clicking the `Open` or `Launch` button in the Microsoft Store page after the download is finished:
+        Go to [Download the Linux kernel update package](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package), download the **'WSL2 Linux kernel update package for x64 machines'** under **'1. Download the latest package:'** and install it.  
+        Then, go back to the **'console'** and press any key to continue. If necessary, launch **'Ubuntu'** again using one of the methods described in step 1.
 
-  <img src="assets/ubuntu_open_microsoft_store.png" alt="SVG Icon" width="300" height="auto" />
-
-- or by typing `ubuntu` in your Windows search bar:
-
-![start](assets/start.png)
-
-![start](assets/open_ubuntu.png)
-
-The first time the newly installed `Ubuntu` runs, a `Console` window will open.
-
-- If you get this error:
-
-  ![start](assets/ubuntu_instalation_error.png)
-
-  Go to [Download the Linux kernel update package](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package), download the _update package_ in step "1. Download the latest package:" and install it.  
-  Then, go back to the console, press any key to continue and `open` or `launch` Ubuntu again using any of the two previous mentioned methods (Microsoft Store or the Windows search bar).
-
-- If you don't get the previous error, you're good to go.
+      - If you don't get the previous error, you're good to go.
 
 You'll now be asked to wait for a minute or two for the installation to complete.
 
-> During this final stage of installation, `Ubuntu`'s files are de-compressed and stored on your PC, ready for use. This may take around a minute or more depending on the performance of your PC's storage devices. This initial installation phase is only required on the first launch - all future launches should take less than a second.
+> During this final stage of installation, **'Ubuntu'**'s files are de-compressed and stored on your PC, ready for use. This may take around a minute or more depending on the performance of your PC's storage devices. This initial installation phase is only required on the first launch. All future launches should take less than a second.
 
-## Setting up a new Linux user account
+## 5. Setting up a new Linux user account
 
-Once the installation is complete, you will be prompted to create a new user account (and its password).
+Once the installation is complete, you will be prompted to create a new **'user account'** (and its **'password'**).
 
-![Ubuntu unpacking in the Windows console](assets/UbuntuInstall.png)
+![alt text](assets/UbuntuInstall.png)
 
-This user account is for the normal non-admin user that you'll be logged-in by default when launching `Ubuntu`.
+This user account is for the normal non-admin user that you'll be logged-in by default when launching **'Ubuntu'**.
 
-> You can choose any username and password you wish - they have no bearing on your Windows username. Beware that when you type passwords in the terminal, you will not see what you are typing. This is a normal behavior in Linux. Just type the password and hit <kbd>Enter</kbd>.
+> You can choose any **'username'** and **'password'** you wish. They have no bearing on your Windows **'username'**. Beware that when you type passwords in the terminal, you will not see what you are typing. This is a normal behavior in Linux. Just type the **'password'** and hit <kbd>Enter</kbd>.
 
-When you open a new `Ubuntu` instance, you won't be prompted for your password, but **if you elevate a process using `sudo`, you will need to enter your password**, so make sure you choose a password you can easily remember! On `Ubuntu`, every user can do admin tasks such as installing software, but they have to use the magic `sudo` word and input the password. This tells `Ubuntu` that you will be acting as admin in the next moments.
+When you open a new **'Ubuntu'** instance, you won't be prompted for your password, but if you elevate a process using `sudo`, you will need to enter your **'password'**, so make sure you choose a password you can easily remember! On **'Ubuntu'**, every user can do admin tasks such as installing software, but they have to use the magic `sudo` word and input the password. This tells **'Ubuntu'** that you will be acting as admin in the next moments.
 
-> ⚠️ **Important: Do not forget this password (along with the associated username)**, as you'll not be able to see it again. It is your access card to perform operating system actions that require administrator privileges such as installation of some necessary features to work through the course.
+> ⚠️ **Important:** Do not forget this **'password'** (along with the associated **'username'**), as you'll not be able to see it again. It is your access card to perform operating system actions that require administrator privileges such as installation of some necessary features to work through the course.
 
-## Setting defaults
+## 6. Checking and setting defaults
 
-If this is the first time WSL is enabled in your computer and you have never installed any Linux distribution, you can skip the next steps and move to [Opening the WSL terminal](#opening-the-wsl-terminal)
+**'Ubuntu 22.04'** runs under WSL version 2 (**'WSL 2'**). Typically, **'Windows'** and **'Ubuntu'** take care of the configuration details for you, but still, **it's recommended to check them anyway**, following these steps:
 
-If you are unsure about it, or you have either enabled WSL previously or installed another Linux distribution before, proceed as follows:
+> ⚠️ This is particularly important if you have **previous versions** of WSL/Ubuntu installed on your computer.
 
-1. Close the Ubuntu console
+1. Close the **'Ubuntu'** console
 
-2. Run Windows Powershell using the Windows search bar as described in [Install the Windows Subsystem for Linux](#install-the-windows-subsystem-for-linux)
-
-3. In the Powershell execute the following command:
+2. Open the **'PowerShell'** (if it's not already opened), and run the command:
 
    ```powershell
-   wsl -l -v
+   wsl --status
    ```
 
-   - If the output includes the following `Ubuntu-22.04` line, with this exact configuration (including the asterisk character `*`, `Running` and `2`):
+    > 📝 **Note:** To open the **'PowerShell'** check [step 1.](#step-2_2_1) under _Approach 2: Using the Windows PowerShell_.
 
-     ![](assets/wsl-l-v_output.png)
+   You should get an output similar to:
 
-     you can skip the next steps and move to [Opening the WSL terminal](#opening-the-wsl-terminal)
+   ![alt text](assets/windows_wsl--status.png)
 
-   - If the output doesn't include the previous `Ubuntu-22.04` line with this exact configuration (including the asterisk character `*`, `Running` and `2`), proceed as follows:
 
-4. In the Powershell, set WSL 2 as the default Windows Subsystem for Linux:
+3. Check the first line of the output
 
-   ```powershell
-   wsl --set-default-version 2
-   ```
+   - If `Default Distribution` is `Ubuntu 22.04` move on to the next step (4.)
 
-5. In the Powershell, set Ubuntu 22.04 as the default Linux distribution:
+   - If it's not, run the following command:
 
-   ```powershell
-   wsl --set-default Ubuntu-22.04
-   ```
+     ```powershell
+     wsl --set-default Ubuntu-22.04
+     ```
 
-> These two last steps will ensure that Windows always runs the appropriated versions of the enabled and installed features.
+4. Check the second line of the output
 
-## Opening the WSL terminal
+   - If `Default Version` is `2` you're good to go
 
-> ⚠️ **Important**: From now on, every time we ask you to open a terminal, this is what you need to do. We'll refer to it just as `terminal` instead of `WSL terminal` or `Ubuntu terminal`.
+   - If it's not, run the following command:
 
-Whenever you want to use WSL, just type `ubuntu` in your Windows search bar.
+     ```powershell
+     wsl --set-default-version 2
+     ```
 
-![start](assets/start.png)
+> This procedure will ensure that Windows always runs the appropriated versions of the enabled and installed features.  
+> For additional information about **'WSL'** basic commands visit [learn.microsoft.com](https://learn.microsoft.com/en-us/windows/wsl/basic-commands)
 
-Open it:
+> 📝 Informative: If you have more than one OS feature installed, you can run the following command to get the full scope of your system's current features and state:
+>
+> ```powershell
+> wsl -l -v
+> ```
 
-![start](assets/open_ubuntu.png)
+## 7. Opening the WSL terminal
 
-Then a `terminal` window will open that allows you to interact with `Ubuntu`.
+> ⚠️ **Important**: From now on, every time we ask you to open a terminal, this is what you need to do. We'll refer to it just as **'terminal'** instead of 'WSL terminal' or 'Ubuntu terminal'.
 
-![Ubuntu unpacking in the Windows console](assets/orange_circle.png)
+1. Whenever you want to use **'WSL'**, just type **'Ubuntu'** in your **'Windows search bar'** and open it in the **'Windows search filter'** (as previously stated):
 
-## Enable copy and paste keyboard shortcuts
+![alt text](assets/windows_search_bar_ubuntu.png)
 
-By default, the terminal does not allow the usual shortcuts for copying and pasting - you have to enable them first. In the upper left corner of the WSL terminal, click the orange square, and then click `Properties`:
+2. Then a **'terminal'** window will open that allows you to interact with **'Ubuntu'**.
 
-![Ubuntu unpacking in the Windows console](assets/orange_circle_properties.png)
+![alt text](assets/ubuntu_projects_folder.png)
 
-Then under the `Options` tab, in the `Edit Options` section, make sure that `Use Ctrl+Shift+C/V as Copy/Paste` in enabled and click `OK`:
+## 8. Enable copy and paste keyboard shortcuts
 
-![Ubuntu unpacking in the Windows console](assets/copy_paste_properties.png)
+By default, the **'terminal'** does not allow the usual shortcuts for copying and pasting - you have to enable them first. In the upper left corner of the **'terminal'**, click the orange square, and then click **'Properties'**:
 
-## Update & upgrade Ubuntu's software packages
+![alt text](assets/ubuntu_properties_option.png)
 
-Most Linux distributions ship with an empty/minimal software package catalog. We strongly recommend regularly updating your package catalog, and upgrading your installed packages using the appropriate package manager. On `Ubuntu`, you use the `apt` package manager. The following command will check for software updates and install them:
+Then under the **'Options'** tab, in the **'Edit Options'** section, make sure that **'Use Ctrl+Shift+C/V as Copy/Paste'** in enabled and click <kbd>OK</kbd>:
+
+![alt text](assets/ubuntu_copy_paste_option.png)
+
+## 9. Update & upgrade Ubuntu's software packages
+
+Most Linux distributions ship with an empty/minimal software package catalog. We strongly recommend regularly updating your package catalog, and upgrading your installed packages using the appropriate package manager. On **'Ubuntu'**, you use the `apt` package manager. The following command will check for software updates and install them:
 
 ```bash
 sudo apt update && sudo apt upgrade
 ```
 
-> Windows does not automatically update or upgrade your Linux distribution. This is a task that the Linux users prefer to control themselves.
+> Windows does not automatically update or upgrade your Linux distribution since this is a task that its users usually prefer to control themselves.
 
-## How to open Windows File Explorer to manipulate files inside WSL
+## 10. How to open Windows File Explorer to manipulate files inside WSL
 
-If you’d like to use `Windows File Explorer` to manipulate the files in WSL, just type this in the `terminal`. **(Don't forget to include the dot! The dot means "current directory")**:
+If you’d like to use **'Windows Explorer'** to manipulate the files in **'WSL'**, just type this in the **'terminal'**.(Don't forget to include the **dot**, which means "`current directory`"):
 
 ```console
 explorer.exe .
 ```
 
-The `Windows Explorer` should pop up:
+The **'Windows Explorer'** should pop up:
 
-![start](assets/windows_explorer.png)
+![alt text](assets/windows_explorer.png)
 
-If you wish, you can also access your user folder directly from the Windows Explorer address bar using this path: `\\wsl.localhost\Ubuntu-22.04\home\<YOUR USERNAME>`. This is exactly the same as calling the Windows Explorer from within your Ubuntu user folder with the `.` option.
+If you wish, you can also access your user folder directly from the **'Windows Explorer address bar'** using this path: `\\wsl.localhost\Ubuntu-22.04\home\<YOUR USERNAME>`. This is exactly the same as calling the **'Windows Explorer'** from within your **'Ubuntu user folder'** with the `.` option.
 
-Keep in mind that you should manipulate files and create directories inside your `Ubuntu-22.04/home/<your name>` folder.
+Keep in mind that you should manipulate files and create directories inside your `Ubuntu-22.04/home/<YOUR USERNAME>` folder.
 
-You're all set with WSL! Never imagined yourself using the wonderful GNU/Linux operating system? Don't worry too much about it. First because the LDSA team will be with you all the way, and second, well... Microsoft didn't also, but eventually things change... 😉
+## 11. Final thoughts
 
-<img src="assets/ballmer_statement_about_Linux_2001.png" alt="SVG Icon" width="650" height="auto" />
+You're all set with **'WSL'**! Never imagined yourself using the wonderful Linux operating system? Don't worry too much about it. First because the LDSA team will be with you all the way, and second, well... Microsoft didn't also, but eventually things change... 😉
 
-_[Thomas C Greene @ The Register - Jun 2001](https://www.theregister.com/2001/06/02/ballmer_linux_is_a_cancer/)_
+> _[Microsoft's CEO, Jun 2001](https://www.theregister.com/2001/06/02/ballmer_linux_is_a_cancer/)_ [^2]:
+>
+> <img src="assets/article_ballmer_statement_about_Linux_2001.png" alt="alt text" width="650" height="auto" />
 
-![start](assets/microsoft_loves_linux.png)
+> _[Microsoft (19 contributors), Nov 2023](https://learn.microsoft.com/en-us/windows/wsl/about#microsoft-loves-linux)_ [^3]:
+>
+> ![alt text](assets/article_microsoft_loves_linux_2023.png)
 
-_[Microsoft (19 contributors) @ learn.microsoft.com - Nov 2023](https://learn.microsoft.com/en-us/windows/wsl/about#microsoft-loves-linux)_
+That's it! Time to go back to the initial setup for Windows and continue with [step 2](../WINDOWS.md#step-2) of _Set-up instructions for Windows 10/11_.
 
-That's it! Time to go back to the initial setup for Windows and continue with [step 3](https://github.com/LDSSA/ds-prep-course-2024/tree/readme-update-cmm79#3-setup-git-and-github).
+### References
+
+[^1]: Various contributors - "**_[GNU/Linux naming controversy](https://en.wikipedia.org/wiki/GNU/Linux_naming_controversy)_**". [Wikipedia](https://www.wikipedia.org/), [2024].  
+[^2]: Thomas C Greene - "**_[Ballmer: 'Linux is a cancer'](https://www.theregister.com/2001/06/02/ballmer_linux_is_a_cancer/)_**". [The Register](https://www.theregister.com/), (2001).
+[^3]: Various contributors (19) - "**_[What is the Windows Subsystem for Linux?](https://learn.microsoft.com/en-us/windows/wsl/about)_**". [learn.microsoft.com](https://learn.microsoft.com/), (2023).

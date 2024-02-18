@@ -48,7 +48,7 @@ Please choose your operating system:
   </tr>
 </table>
 
-## 3. Setup _Git_ and _GitHub_
+## 3. Setup *Git* and *GitHub*
 
 Click on the image to follow the link.
 

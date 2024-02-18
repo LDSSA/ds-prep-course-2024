@@ -3,7 +3,7 @@
 [1. When I open Windows Explorer through Ubuntu, it goes to a different folder than in the guide](#1-when-i-open-windows-explorer-through-ubuntu-it-goes-to-a-different-folder-than-in-the-guide)  
 [2. Ubuntu on Windows 10 high CPU usage, crashes](#2-ubuntu-on-windows-10-high-cpu-usage-crashes)  
 [3. When I pull from the `ds prep course-2024` repository, I get an error](#3-when-i-pull-from-the-ds-prep-course-2024-repository-i-get-an-error)  
-[4. When I try to open `jupyter notebook`, I get an error](#4-when-i-try-to-open-the-jupyter-notebook-i-get-an-error)  
+[4. When I try to open 'jupyter notebook', I get an error](#4-when-i-try-to-open-the-jupyter-notebook-i-get-an-error)  
 [5. When I use the `cp` command the `>` sign appears and the command does not execute](#5-when-i-use-the-cp-command-the--sign-appears-and-the-command-does-not-execute)  
 [6. When setting up python 3.8 I get an error](#6-when-setting-up-python-38-i-get-an-error)  
 [7. Nothing happens when I type my password](#7-nothing-happens-when-i-type-my-password)  
@@ -33,7 +33,7 @@ Please commit your changes or stash them before you merge.
 Aborting
 ```
 
-what `git` is telling you is that changes were made by you to the files in the `~/projects/ds-prep-course-2024` folder, and therefore it is not pulling the changes made by the instructors because they would overwrite the changes made by you.
+what **'Git'** is telling you is that changes were made by you to the files in the `~/projects/ds-prep-course-2024` folder, and therefore it is not pulling the changes made by the instructors because they would overwrite the changes made by you.
 
 To fix this do the following:
 
@@ -68,7 +68,7 @@ cp -r ~/projects/ds-prep-course-2024/“Week 00" ds-prep-workspace
 
 Make sure to use this type of quotes `"` and not these ones `“`.
 
-### 6. When setting up python 3.8 I get an error
+### 6. When setting up python 3.11 I get an error
 
 When I run this command:
 
@@ -88,7 +88,7 @@ Solution: Take the id in front of `NO_PUBKEY` (in my case it's `7FCC7D46ACCC4CF8
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 7FCC7D46ACCC4CF8
 ```
 
-### 7. Nothing happens when I type my password
+### 7. Nothing happens when I type my password in the terminal
 
 When you type your password in the terminal, it is not visible. This is normal, just type the password and hit <kbd>enter</kbd>.
 
