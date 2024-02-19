@@ -1,4 +1,4 @@
-# Data Science Prep Course 2024 documentation is currently being updated, so stay tuned!
+# Data Science Prep Course 2024
 
 Welcome to the Data Science Prep Course repository! 🧑‍💻
 
