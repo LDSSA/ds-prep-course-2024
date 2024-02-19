@@ -3,7 +3,8 @@ click==8.1.7       # base, used for grading
 
 numpy==1.26.4      # used by some units (SLU08 - Functions Intermediate: Exercise notebook, ...)
 matplotlib==3.8.2  # used by some units (SLU12 - Linear Algebra & NumPy, Part 1, ...)
+pygame==2.5.2      # used by SLU16 - Final project
 
-pytest==8.0.0      # used in Exam preparation II (SLU08_1)
-geopy==2.4.1       # used in Exam preparation II (SLU08_2)
-scipy==1.12.0      # used in Exam preparation II (SLU08_4)
+pytest==8.0.0      # used in Exam preparation II (SLU18_1)
+geopy==2.4.1       # used in Exam preparation II (SLU18_2)
+scipy==1.12.0      # used in Exam preparation II (SLU18_4)

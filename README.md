@@ -2,7 +2,8 @@
 
 Welcome to the Data Science Prep Course repository! 🧑‍💻
 
-Your first step in this journey is to **carefully read** the steps in this tutorial. ⚠️ **Important**: Make sure to complete all the steps during the setup week, **18.3 - 24.3. 2024**. If you are struggling with any of the steps, tell us in the [#set-up](https://ldsaprepcourse2024.slack.com/archives/C06GMB5BHU7) channel on Slack! In this tutorial, you'll learn:
+Your first step in this journey is to **carefully read** the steps in this tutorial.  
+⚠️ **Important**: Make sure to complete all the steps during the setup week, **18.3 - 24.3. 2024**. If you are struggling with any of the steps, tell us in the [#set-up](https://ldsaprepcourse2024.slack.com/archives/C06GMB5BHU7) channel on Slack! In this tutorial, you'll learn:
 
 - Slack usage and etiquette;
 - How to setup your software environment;
