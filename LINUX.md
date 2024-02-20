@@ -1,8 +1,10 @@
 # Set-up instructions for Linux
 
-Welcome to **Linux/Ubuntu set up** repository!
+Welcome to **Linux/Ubuntu set up**!
 
 Your first step in this journey is to **carefully read** the steps in this tutorial. You'll learn how to set up your environment.
+
+Before we start, if you're a curious and restless mind that always likes to know context details, check out [this link](https://en.wikipedia.org/wiki/GNU/Linux_naming_controversy) [^1] about the **'GNU/Linux'** or simply **'Linux'** designation (as you wish). If you're an objective focused mind, just move on and get things rolling 🙂.
 
 So you're using **'Ubuntu'**, huh? Well, kudos to you. You just need to install a couple of packages.
 
@@ -32,3 +34,7 @@ sudo apt update && sudo apt upgrade && sudo apt install python3-pip python3.11-v
 ```
 
 And you're done! Go back to the main menu and continue with setting up Git and GitHub in [step 3](README.md#3-setup-git-and-gitHub).
+
+### References
+
+[^1]: Various contributors - "**_[GNU/Linux naming controversy](https://en.wikipedia.org/wiki/GNU/Linux_naming_controversy)_**". [Wikipedia](https://www.wikipedia.org/), [2024].

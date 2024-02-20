@@ -2,7 +2,7 @@
 
 ## 1. Make sure that Windows is up to date
 
-<a id="step-1_1" style="color: black;">&nbsp; 1.</a> Type `updates` in your **'Windows search bar'** to open the **'Windows search filter'**:
+<span id="step-1_1" style="color: black;">&nbsp; 1.</span> Type `updates` in your **'Windows search bar'** to open the **'Windows search filter'**:
 
 ![alt text](assets/windows_search_bar.png)
 
