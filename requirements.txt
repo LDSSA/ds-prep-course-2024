@@ -1,8 +1,10 @@
-ipython==8.4.0          # base
-nbgrader==0.7.0         # base
-notebook==6.4.0         # base
-jupyter-client==6.1.12  # base
-click==8.1.3            # base, used for grading
+nbgrader==0.9.1    # base, Jupyter notebook
+click==8.1.7       # base, used for grading
 
-numpy==1.24.2           # used by some units
-matplotlib==3.6.3       # used by some units
+numpy==1.26.4      # used by some units (SLU08 - Functions Intermediate: Exercise notebook, ...)
+matplotlib==3.8.2  # used by some units (SLU12 - Linear Algebra & NumPy, Part 1, ...)
+pygame==2.5.2      # used by SLU16 - Final project
+
+pytest==8.0.0      # used in Exam preparation II (SLU18_1)
+geopy==2.4.1       # used in Exam preparation II (SLU18_2)
+scipy==1.12.0      # used in Exam preparation II (SLU18_4)
