@@ -1,6 +1,6 @@
 # Python virtual environment
 
-**'Virtual environments'** are like rooms designed to work on a specific project. For instance, you could have a room for painting with all your painting tools and another room for sewing with all your sewing tools. Each room is like a world on it's own - you go to a specific room to work on a specific project with a specific set of tools.
+**'Virtual environments'** are like rooms designed to work on a specific project. For instance, you could have a room for painting with all your painting tools and another room for sewing with all your sewing tools. Each room is like a world on its own - you go to a specific room to work on a specific project with a specific set of tools.
 
 **'Python virtual environments'** are like a "room" where you gather all the **'Python packages'** that you will need to work on your **'Python project'**. You can have many virtual environments on your computer. Every time you work on a project, you activate the corresponding virtual environment with all the necessary software packages. **The virtual environments are independent of each other**. The advantage is also that your OS Python installation is unaffected - Ubuntu needs Python and if you break your OS Python installation, you can break Ubuntu. Check out more information [here](https://realpython.com/python-virtual-environments-a-primer/#what-is-a-virtual-environment).
 
