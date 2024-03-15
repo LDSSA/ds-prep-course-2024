@@ -70,7 +70,7 @@ and your browser should pop up with **'Jupyter notebook'** open. However, if thi
 
 - Study the **'Learning Notebook'**. You can interact with the notebook and try out the code.
 
-- Complete the tasks in the **'Exercise Notebook'**. Don't forget to save your work as you go along!
+- Complete the tasks in the **'Exercise Notebook'**. Don't forget to save your work as you go along! Sometimes there will be more Exercise notebooks and they will be numbered. In that case, if you are a complete beginner, start with notebook 0, then proceed to notebook 1. If you are planning to apply for the Starters academy, complete also notebook 2. You can skip notebook 0 if you already have some programming experience.
 
 > 📝 **Note:** You may eventually also find **'Extra Notebooks'** and **'Example Notebooks'** in some **SLU**s
 
