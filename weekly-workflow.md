@@ -94,22 +94,27 @@ and your browser should pop up with **'Jupyter notebook'** open. However, if thi
 
   ![terminal notebook](media/terminal_notebook.png)
 
-  5.  Close all the notebooks, return to the terminal and stop the notebook server by typing `Ctrl+C+C` (`Ctrl` and `C` two times).
+  5.  Close all the notebooks, return to the terminal and stop the notebook server by typing `Ctrl+C+C` (`Ctrl` and two times `C` ).
 
   6.  [Get your Slack ID](https://moshfeu.medium.com/how-to-find-my-member-id-in-slack-workspace-d4bba942e38c) and submit the notebook to the [portal](https://prep-course-portal.ldsacademy.org/). **The virtual environment has to be activated and you have be in the learning unit folder!**
 
   ```bash
   cd ~/projects/ds-prep-workspace/"Week <week number>"/"<SLU name>"
-  python submit.py --slackid "YOUR_SLACK_ID"
+  python submit.py --notebook --slackid "YOUR_SLACK_ID"
   ```
 
   **Example:** For **'Week 00'** you'd do:
 
   ```bash
   cd ~/projects/ds-prep-workspace/"Week 00"/"SLU00 - Jupyter Notebook"
-  python submit.py --slackid "YOUR_SLACK_ID"
+  python submit.py --notebook "Exercise notebook" --slackid "YOUR_SLACK_ID"
   ```
-
+  With numbered Exercise notebooks, include the number like this:
+  
+  ```bash
+  python submit.py --notebook "Exercise notebook 1" --slackid "YOUR_SLACK_ID"
+  ```
+  
   It can take a while for the submission to get through. If it worked out, you should get a message like this one. You will see your grade (score) and the learning unit number.
 
   ```bash
