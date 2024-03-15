@@ -55,7 +55,7 @@ Then follow the steps below.
 **Step 1:** Open the **'Jupyter Notebook'** application by running:
 
 ```bash
-jupyter-notebook --NotebookApp.use_redirect_file=False
+jupyter notebook
 ```
 
 You should see something similar to this happening in your **'terminal'**:
