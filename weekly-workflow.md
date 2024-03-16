@@ -96,7 +96,7 @@ and your browser should pop up with **'Jupyter notebook'** open. However, if thi
 
   5.  Close all the notebooks, return to the terminal and stop the notebook server by typing `Ctrl+C+C` (`Ctrl` and two times `C` ).
 
-  6.  [Get your Slack ID](https://moshfeu.medium.com/how-to-find-my-member-id-in-slack-workspace-d4bba942e38c) and submit the notebook to the [portal](https://prep-course-portal.ldsacademy.org/). **The virtual environment has to be activated and you have be in the learning unit folder!**
+  6.  Get your Slack ID (read [this](https://moshfeu.medium.com/how-to-find-my-member-id-in-slack-workspace-d4bba942e38c) if you don't know where to find it) and submit the notebook to the [portal](https://prep-course-portal.ldsacademy.org/). **The virtual environment has to be activated and you have be in the learning unit folder!**
 
   ```bash
   cd ~/projects/ds-prep-workspace/"Week <week number>"/"<SLU name>"
