@@ -1,7 +1,6 @@
 nbgrader==0.9.1    # base, Jupyter notebook
-click==8.1.7       # base, used for grading
 
-numpy==1.26.4      # used by some units (SLU08 - Functions Intermediate: Exercise notebook, ...)
+numpy==1.26.0      # used by some units (SLU08 - Functions Intermediate: Exercise notebook, ...)
 matplotlib==3.8.2  # used by some units (SLU12 - Linear Algebra & NumPy, Part 1, ...)
 pygame==2.5.2      # used by SLU16 - Final project
 
