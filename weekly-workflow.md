@@ -100,14 +100,14 @@ and your browser should pop up with **'Jupyter notebook'** open. However, if thi
 
   ```bash
   cd ~/projects/ds-prep-workspace/"Week <week number>"/"<SLU name>"
-  python submit.py --notebook --slackid "YOUR_SLACK_ID"
+  python3.11 submit.py --notebook --slackid "YOUR_SLACK_ID"
   ```
 
   **Example:** For **'Week 00'** you'd do:
 
   ```bash
   cd ~/projects/ds-prep-workspace/"Week 00"/"SLU00 - Jupyter Notebook"
-  python submit.py --notebook "Exercise notebook" --slackid "YOUR_SLACK_ID"
+  python3.11 submit.py --notebook "Exercise notebook" --slackid "YOUR_SLACK_ID"
   ```
   With numbered Exercise notebooks, include the number like this:
   
