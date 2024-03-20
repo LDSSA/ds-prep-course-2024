@@ -177,7 +177,7 @@ When you open a new **'Ubuntu'** instance, you won't be prompted for your passwo
 
 ![alt text](assets/windows_search_bar_ubuntu.png)
 
-2. Then a **'terminal'** window will open that allows you to interact with **'Ubuntu'**.
+2. Then a **'terminal'** window will open that allows you to interact with **'Ubuntu'**. The beginning of the line shows your Ubuntu username, `cmm` in this example. If you don't see your Ubuntu username, but the line begins with `root`, you forgot to set up the username when installing Ubuntu. The easiest solution is to reinstall Ubuntu.
 
 ![alt text](assets/ubuntu_projects_folder.png)
 
