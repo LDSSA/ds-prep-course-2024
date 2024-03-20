@@ -79,6 +79,12 @@ You should now have a local copy of your `ds-prep-workspace` in your `~/projects
 
 <img src='media/personal_access_token.PNG' width="75%" />
 
+If the cloning worked out, you should see the cloned repository folder `ds-prep-course-2024` in your `projects` directory. You can see if it's there by listing its contents:
+
+```bash
+ls ~/projects
+```
+
 ### 3.4 Clone the `ds-prep-course-2024` repository
 
 Let's clone the [`ds-prep-course-2024`](https://github.com/LDSSA/ds-prep-course-2024) repository. This is where all of the learning materials will be made available as the prep course progresses. You will be getting them (pulling) from there.
@@ -101,10 +107,21 @@ If you are using **'SSH keys'** for **'GitHub'**, use this command:
 git clone git@github.com:LDSSA/ds-prep-course-2024.git
 ```
 
+If the cloning worked out, you should see the cloned repository folder `ds-prep-course-2024` in your `projects` directory. You can see if it's there by listing its contents:
+
+```bash
+ls ~/projects
+```
+
 **Step 3:** Copy the `requirements.txt` file from the **'prep course repository'** to your **'local workspace repository'**. The `cp` bash command means **c**o**p**y. Then you have the address of the file that is being copied and to where it is copied.
 
 ```bash
 cp ~/projects/ds-prep-course-2024/requirements.txt ~/projects/ds-prep-workspace
+```
+You can check if the copying worked out by listing the contents of the `ds-prep-workspace` directory. The `requirements.txt` file should be there.
+
+```bash
+ls ~/projects/ds-prep-workspace
 ```
 
 And you're done with setting **'Git'** and **'GitHub'**! Go back to the main menu and continue with [step 4](https://github.com/LDSSA/ds-prep-course-2024/tree/main), setting up the virtual environment.
