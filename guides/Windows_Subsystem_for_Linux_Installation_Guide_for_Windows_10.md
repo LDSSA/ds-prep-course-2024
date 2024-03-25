@@ -113,7 +113,7 @@ Once the installation is complete, you will be prompted to create a new **'user 
 
 This user account is for the normal non-admin user that you'll be logged-in by default when launching **'Ubuntu'**.
 
-> You can choose any **'username'** and **'password'** you wish. They have no bearing on your Windows **'username'**. Beware that when you type passwords in the terminal, you will not see what you are typing. This is a normal behavior in Linux. Just type the **'password'** and hit <kbd>Enter</kbd>.
+> You can choose any **'username'** and **'password'** you wish. They have no bearing on your Windows **'username'**. The only restriction is that the **username** should be in **lowercase**. Beware that when you type passwords in the terminal, you will not see what you are typing. This is a normal behavior in Linux. Just type the **'password'** and hit <kbd>Enter</kbd>.
 
 When you open a new **'Ubuntu'** instance, you won't be prompted for your password, but if you elevate a process using `sudo`, you will need to enter your **'password'**, so make sure you choose a password you can easily remember! On **'Ubuntu'**, every user can do admin tasks such as installing software, but they have to use the magic `sudo` word and input the password. This tells **'Ubuntu'** that you will be acting as admin in the next moments.
 
@@ -177,7 +177,7 @@ When you open a new **'Ubuntu'** instance, you won't be prompted for your passwo
 
 ![alt text](assets/windows_search_bar_ubuntu.png)
 
-2. Then a **'terminal'** window will open that allows you to interact with **'Ubuntu'**.
+2. Then a **'terminal'** window will open that allows you to interact with **'Ubuntu'**. The beginning of the line shows your Ubuntu username, `cmm` in this example. If you don't see your Ubuntu username, but the line begins with `root`, you forgot to set up the username when installing Ubuntu. The easiest solution is to reinstall Ubuntu.
 
 ![alt text](assets/ubuntu_projects_folder.png)
 
