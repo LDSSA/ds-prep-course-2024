@@ -137,7 +137,7 @@ and your browser should pop up with **'Jupyter notebook'** open. However, if thi
    {"id":10,"created":"2023-03-26T00:40:17.603128Z", "slackid":"U04ST63FC02", "learning_unit" 0, "exercise_notebook":1, "score":20.0}
   ```
 
-  Your submission should now be on the [portal](https://prep-course-portal.ldsacademy.org/). The submissions are ordered by the learning unit number, then chronologically. The easiest way to find your submission is to search for your Slack ID.
+  Your submission should now be on the [portal](https://prep-course-portal.ldsacademy.org/). The submissions are ordered by the learning unit number, then chronologically. The easiest way to find your submission is to search for your Slack ID. Use `Ctrl+F` to search for your Slack ID. You can then click on your Slack ID to see all your submissions.
 
 **Step 4:** **'Commit'** and **'push'**
 
