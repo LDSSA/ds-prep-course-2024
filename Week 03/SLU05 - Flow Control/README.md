@@ -31,4 +31,3 @@ Take the fate of your code into your own hands.
 - Interrupting loops with the `continue` and `break` statements
 - List Comprehension (Optional)
 - Dictionary Comprehension (Optional)
-
